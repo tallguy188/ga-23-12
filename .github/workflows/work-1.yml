@@ -1,6 +1,11 @@
 name: work-1
 on:
   push:
+    paths:
+      - '.github/workflows/**'
+      - 'src/**'
+      - 'build.gradle'
+      - 'Dockerfile'
     branches:
       - main
 jobs:
